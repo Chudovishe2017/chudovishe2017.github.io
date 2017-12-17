@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Features</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open-source library">
+    <link rel="canonical" href="http://localhost:4000/yakhont/update/2017/12/15/features/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pygments.css">
+</head>
+
+
+    <body>
+
+      <div class="container">
+
+        <div class="header">
+    <h1>
+        <a style="color: #000;" href="/">YAKHONT</a>
+    </h1>
+    <p class="sub">
+        Open-source library
+    </p>
+
+    <div class="menu">
+        <ul class="navlist">
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+        <div class="post">
+
+  <header class="post-header">
+    <h1>Features</h1>
+  </header>
+
+  <p class="meta">Dec 15, 2017</p>
+
+  <article class="post-content">
+  <p>Yakhont: the list of available features</p>
+
+<h2 id="callback-components">Callback components</h2>
+<ul>
+  <li>developer-defined callbacks to customize lifecycles of Activities and Fragments</li>
+</ul>
+
+<h2 id="location-component">Location component</h2>
+<ul>
+  <li>extremely easy to use - just annotate your Activity</li>
+  <li>both new and old Google Location API support</li>
+  <li><em>Rx</em> support</li>
+  <li>auto handling of dynamic permissions</li>
+  <li>build-in conversion to DMS format (something like <em>5°31′08″ N 87°04′18″ W</em>)</li>
+</ul>
+
+<h2 id="loader-component">Loader component</h2>
+<ul>
+  <li>build-in cache</li>
+  <li>build-in swipe-to-refresh</li>
+  <li>fully asynchronous</li>
+  <li>forced timeouts</li>
+  <li><em>Retrofit</em> support</li>
+  <li><em>Rx</em> support</li>
+  <li>device orientation changing support</li>
+  <li>fully customizable progress GUI</li>
+  <li>possibility to cancel data loading (also with customizable GUI)</li>
+  <li>extendable (support for non-Retrofit components can be added)</li>
+</ul>
+
+<h2 id="retrofit-components">Retrofit components</h2>
+<ul>
+  <li>both <a href="http://square.github.io/retrofit/1.x/retrofit/">Retrofit</a> and <a href="http://square.github.io/retrofit/2.x/retrofit/">Retrofit 2</a> support</li>
+  <li>HTTP headers and cookies (Retrofit 2 only) support</li>
+  <li>local clients (in demo)</li>
+</ul>
+
+<h2 id="rx-components">Rx components</h2>
+<ul>
+  <li>both <a href="https://github.com/ReactiveX/RxJava/tree/1.x">RxJava</a> and <a href="https://github.com/ReactiveX/RxJava">RxJava 2</a> support</li>
+  <li>build-in error handlers</li>
+  <li><em>SafeSubscriber</em> wrappers</li>
+</ul>
+
+<h2 id="adapter-component">Adapter component</h2>
+<ul>
+  <li>automatic (but fully customizable) data binding</li>
+  <li>build-in cache support</li>
+  <li><em>RecyclerView</em>, <em>ListView</em> and <em>GridView</em> support</li>
+</ul>
+
+<h2 id="cache-component">Cache component</h2>
+<ul>
+  <li>automatic and absolutely transparent</li>
+  <li>creates tables and adds columns “on the fly”</li>
+  <li>BLOB support</li>
+  <li>transactions support (including bulk insert)</li>
+  <li>database copy support (for debugging)</li>
+</ul>
+
+<h2 id="permissions-component">Permissions component</h2>
+<ul>
+  <li>completely auto handling of permission requests and system responses: just define “on granted” and / or “on denied” callbacks</li>
+  <li>fully customizable GUI</li>
+</ul>
+
+<h2 id="gui-component">GUI component</h2>
+<ul>
+  <li>progress and alert dialogs (fully customizable via <a href="http://google.github.io/dagger/">Dagger 2</a>)</li>
+  <li>context-independent <em>Snackbars</em> and <em>Toasts</em> (required <em>Context</em> defines automatically)</li>
+</ul>
+
+<h2 id="dagger-2-component">Dagger 2 component</h2>
+<ul>
+  <li>GUI and location clients customization</li>
+</ul>
+
+<h2 id="logging-component">Logging component</h2>
+<ul>
+  <li>auto-disabled in release builds</li>
+  <li>stack traces for logging records (customizable)</li>
+  <li>supports sending logs and screenshots via e-mail (just shake device); any <em>logcat</em> command can be used</li>
+  <li>extendable (supports 3rd-party logging components)</li>
+</ul>
+
+<h2 id="system-component">System component</h2>
+<ul>
+  <li>possibility to check either application coming to the foreground or going to the background</li>
+  <li>methods to find out current Application, Activity and default View for the given Activity</li>
+  <li>e-mail support</li>
+  <li>zip support</li>
+</ul>
+
+<h2 id="reflection-component">Reflection component</h2>
+<ul>
+  <li>advanced method finding: auto unboxing, supertypes and nulls support</li>
+  <li>invocation with or without exceptions</li>
+  <li>useful setters and getters for fields</li>
+</ul>
+
+<h2 id="debug-components">Debug components</h2>
+<ul>
+  <li>Application, Activities and Fragments lifecycle logging support (can be enabled even for 3rd-party components)</li>
+  <li>more than 40 build-in debug classes (in <em>full</em> version only)</li>
+  <li>StrictMode support</li>
+</ul>
+
+<h2 id="preprocessor-component">Preprocessor component</h2>
+<ul>
+  <li>generates sources for <em>support</em> and <em>full</em> versions (including debug classes, customizable)</li>
+</ul>
+
+<h2 id="weaver-component">Weaver component</h2>
+<ul>
+  <li>manipulates the compiled Java bytecode, fully customizable</li>
+</ul>
+
+  </article>
+
+</div>
+
+
+        <footer class="site-footer">
+<a href="https://github.com/alixedi/typewriter">Typewriter</a> by <a href="http://twitter.com/alixedi">alixedi</a>
+</footer>
+
+
+      </div>
+
+    </body>
+</html>

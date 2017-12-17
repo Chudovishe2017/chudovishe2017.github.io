@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Feed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open-source library">
+    <link rel="canonical" href="http://localhost:4000/feed.xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pygments.css">
+</head>
+
+
+    <body>
+
+      <div class="container">
+
+        <div class="header">
+    <h1>
+        <a style="color: #000;" href="/">YAKHONT</a>
+    </h1>
+    <p class="sub">
+        Open-source library
+    </p>
+
+    <div class="menu">
+        <ul class="navlist">
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+        <?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YAKHONT</title>
+    <description>Open-source library</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Features</title>
+        <description>&lt;p&gt;Yakhont: the list of available features&lt;/p&gt;
+
+&lt;h2 id=&quot;callback-components&quot;&gt;Callback components&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;developer-defined callbacks to customize lifecycles of Activities and Fragments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;location-component&quot;&gt;Location component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;extremely easy to use - just annotate your Activity&lt;/li&gt;
+  &lt;li&gt;both new and old Google Location API support&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Rx&lt;/em&gt; support&lt;/li&gt;
+  &lt;li&gt;auto handling of dynamic permissions&lt;/li&gt;
+  &lt;li&gt;build-in conversion to DMS format (something like &lt;em&gt;5°31′08″ N 87°04′18″ W&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;loader-component&quot;&gt;Loader component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;build-in cache&lt;/li&gt;
+  &lt;li&gt;build-in swipe-to-refresh&lt;/li&gt;
+  &lt;li&gt;fully asynchronous&lt;/li&gt;
+  &lt;li&gt;forced timeouts&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Retrofit&lt;/em&gt; support&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Rx&lt;/em&gt; support&lt;/li&gt;
+  &lt;li&gt;device orientation changing support&lt;/li&gt;
+  &lt;li&gt;fully customizable progress GUI&lt;/li&gt;
+  &lt;li&gt;possibility to cancel data loading (also with customizable GUI)&lt;/li&gt;
+  &lt;li&gt;extendable (support for non-Retrofit components can be added)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;retrofit-components&quot;&gt;Retrofit components&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;both &lt;a href=&quot;http://square.github.io/retrofit/1.x/retrofit/&quot;&gt;Retrofit&lt;/a&gt; and &lt;a href=&quot;http://square.github.io/retrofit/2.x/retrofit/&quot;&gt;Retrofit 2&lt;/a&gt; support&lt;/li&gt;
+  &lt;li&gt;HTTP headers and cookies (Retrofit 2 only) support&lt;/li&gt;
+  &lt;li&gt;local clients (in demo)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;rx-components&quot;&gt;Rx components&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;both &lt;a href=&quot;https://github.com/ReactiveX/RxJava/tree/1.x&quot;&gt;RxJava&lt;/a&gt; and &lt;a href=&quot;https://github.com/ReactiveX/RxJava&quot;&gt;RxJava 2&lt;/a&gt; support&lt;/li&gt;
+  &lt;li&gt;build-in error handlers&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;SafeSubscriber&lt;/em&gt; wrappers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;adapter-component&quot;&gt;Adapter component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;automatic (but fully customizable) data binding&lt;/li&gt;
+  &lt;li&gt;build-in cache support&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;RecyclerView&lt;/em&gt;, &lt;em&gt;ListView&lt;/em&gt; and &lt;em&gt;GridView&lt;/em&gt; support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cache-component&quot;&gt;Cache component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;automatic and absolutely transparent&lt;/li&gt;
+  &lt;li&gt;creates tables and adds columns “on the fly”&lt;/li&gt;
+  &lt;li&gt;BLOB support&lt;/li&gt;
+  &lt;li&gt;transactions support (including bulk insert)&lt;/li&gt;
+  &lt;li&gt;database copy support (for debugging)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;permissions-component&quot;&gt;Permissions component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;completely auto handling of permission requests and system responses: just define “on granted” and / or “on denied” callbacks&lt;/li&gt;
+  &lt;li&gt;fully customizable GUI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;gui-component&quot;&gt;GUI component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;progress and alert dialogs (fully customizable via &lt;a href=&quot;http://google.github.io/dagger/&quot;&gt;Dagger 2&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;context-independent &lt;em&gt;Snackbars&lt;/em&gt; and &lt;em&gt;Toasts&lt;/em&gt; (required &lt;em&gt;Context&lt;/em&gt; defines automatically)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;dagger-2-component&quot;&gt;Dagger 2 component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;GUI and location clients customization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;logging-component&quot;&gt;Logging component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;auto-disabled in release builds&lt;/li&gt;
+  &lt;li&gt;stack traces for logging records (customizable)&lt;/li&gt;
+  &lt;li&gt;supports sending logs and screenshots via e-mail (just shake device); any &lt;em&gt;logcat&lt;/em&gt; command can be used&lt;/li&gt;
+  &lt;li&gt;extendable (supports 3rd-party logging components)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;system-component&quot;&gt;System component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;possibility to check either application coming to the foreground or going to the background&lt;/li&gt;
+  &lt;li&gt;methods to find out current Application, Activity and default View for the given Activity&lt;/li&gt;
+  &lt;li&gt;e-mail support&lt;/li&gt;
+  &lt;li&gt;zip support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reflection-component&quot;&gt;Reflection component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;advanced method finding: auto unboxing, supertypes and nulls support&lt;/li&gt;
+  &lt;li&gt;invocation with or without exceptions&lt;/li&gt;
+  &lt;li&gt;useful setters and getters for fields&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;debug-components&quot;&gt;Debug components&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Application, Activities and Fragments lifecycle logging support (can be enabled even for 3rd-party components)&lt;/li&gt;
+  &lt;li&gt;more than 40 build-in debug classes (in &lt;em&gt;full&lt;/em&gt; version only)&lt;/li&gt;
+  &lt;li&gt;StrictMode support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;preprocessor-component&quot;&gt;Preprocessor component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;generates sources for &lt;em&gt;support&lt;/em&gt; and &lt;em&gt;full&lt;/em&gt; versions (including debug classes, customizable)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;weaver-component&quot;&gt;Weaver component&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;manipulates the compiled Java bytecode, fully customizable&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 15 Dec 2017 18:52:38 +0000</pubDate>
+        <link>http://localhost:4000/yakhont/update/2017/12/15/features/</link>
+        <guid isPermaLink="true">http://localhost:4000/yakhont/update/2017/12/15/features/</guid>
+      </item>
+    
+      <item>
+        <title>About</title>
+        <description>&lt;p&gt;Yakhont is an Android high-level library offering developer-defined callbacks, loader wrappers and adapters, fully automatic cache, location-awareness, dynamic permissions handling, lifecycle debug classes, advanced logging and many more helpful developer-oriented features.&lt;/p&gt;
+
+&lt;p&gt;In short, the features the Yakhont provides are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;developer-defined callbacks to customize lifecycle of Activities and Fragments - and even without changing their sources&lt;/li&gt;
+  &lt;li&gt;powerful (but very easy in use) data loaders and adapters&lt;/li&gt;
+  &lt;li&gt;automatic (but fully customizable) data binding&lt;/li&gt;
+  &lt;li&gt;self-configurable transparent cache which adjusts database structure ‘on the fly’&lt;/li&gt;
+  &lt;li&gt;out-of-the-box location awareness: just annotate your Activity and you’re done&lt;/li&gt;
+  &lt;li&gt;dynamic permissions handling, powered by user-defined callbacks&lt;/li&gt;
+  &lt;li&gt;debug classes with strict mode and lifecycle logging - for all kinds of Activities and Fragments (can be enabled even for 3rd-party components via simple, but effective Yakhont preprocessor)&lt;/li&gt;
+  &lt;li&gt;advanced logging with e-mail support (auto-disabled in release builds) and more.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;The goal of the project is to simplify and make the development of Android applications as cheap as possible, at the same time greatly improving the quality.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The development prospect is an integration with artificial intelligence systems (for creating high-grade Android applications with minimal human participation).&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Dec 2017 18:52:38 +0000</pubDate>
+        <link>http://localhost:4000/jekyll/update/2017/12/15/about/</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2017/12/15/about/</guid>
+      </item>
+    
+  </channel>
+</rss>
+
+
+        <footer class="site-footer">
+<a href="https://github.com/alixedi/typewriter">Typewriter</a> by <a href="http://twitter.com/alixedi">alixedi</a>
+</footer>
+
+
+      </div>
+
+    </body>
+</html>

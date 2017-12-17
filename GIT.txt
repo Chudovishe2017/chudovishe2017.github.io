@@ -1,0 +1,7 @@
+git clone https://github.com/chudovishe2017/chudovishe2017.github.io.git
+cd chudovishe2017.github.io
+git config --global user.name "chudovishe2017"
+git config --global user.email "chudovishe2017@gmail.com"
+git add .
+git commit -m "comment"
+git push -u origin master
